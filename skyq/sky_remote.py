@@ -34,7 +34,7 @@ REST_RECORDING_DETAILS = 'pvr/details/{0}'
 # Sky specific constants
 CURRENT_URI = 'CurrentURI'
 CURRENT_TRANSPORT_STATE = 'CurrentTransportState'
-IMAGE_URL_BASE = 'http://images.metadata.sky.com/pd-image/{0}/16-9/1788'
+IMAGE_URL_BASE = 'https://images.metadata.sky.com/pd-image/{0}/16-9/1788'
 PVR = 'pvr'
 XSI = 'xsi'
 

@@ -64,9 +64,12 @@ class SkyRemote:
         self._host=host
         self._port=port
         self._jsonport = jsonport
-        self._soapControlURl = self._getSoapControlURL(0)
-        if (self._soapControlURl is None):
-            self._soapControlURl = self._getSoapControlURL(1)
+
+        url_index = 0
+        self._soapControlURl = None
+        while self._soapControlURl is None and url_index < 3:
+            self._soapControlURl = self._getSoapControlURL(url_index)
+            url_index += 1
 
     def http_json(self, path, headers=None) -> str:
         try:

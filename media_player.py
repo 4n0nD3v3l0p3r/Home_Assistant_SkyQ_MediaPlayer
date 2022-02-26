@@ -12,7 +12,7 @@ from custom_components.skyq.util.config_gen import SwitchMaker
 import voluptuous as vol
 
 from homeassistant import util
-from homeassistant.components.media_player import MediaPlayerDevice, PLATFORM_SCHEMA
+from homeassistant.components.media_player import MediaPlayerEntity, PLATFORM_SCHEMA
 from homeassistant.components.media_player.const import (
     SUPPORT_PAUSE,
     SUPPORT_PLAY,
@@ -100,7 +100,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     add_entities([player])
 
 
-class SkyQDevice(MediaPlayerDevice):
+class SkyQDevice(MediaPlayerEntity):
     """Representation of a SkyQ Box"""
     def __init__(self, hass, name, host, sources, room, generate_switches_for_channels, config_directory, output_programme_image):
         self.hass = hass

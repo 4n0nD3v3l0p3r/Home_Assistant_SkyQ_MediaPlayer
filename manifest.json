@@ -3,6 +3,8 @@
   "name": "SkyQ",
   "documentation": "",
   "dependencies": [],
-  "codeowners": [],
-  "requirements": []
+  "issue_tracker": "https://github.com/MadmanMonty/Home_Assistant_SkyQ_MediaPlayer/issues",
+  "codeowners": ["@madmanmonty"],
+  "requirements": [],
+  "version": "1.5.0"
 }
